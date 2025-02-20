@@ -1,0 +1,24 @@
+{
+  "name": "cli_mmmchart",
+  "version": "0.3.2",
+  "type": "module",
+  "main": "./source/cli_mmmchart.js",
+  "exports": "./source/cli_mmmchart.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "M-ing",
+  "license": "MIT",
+  "description": "Three simple charts in your terminal with node.js!",
+  "funding": "https://github.com/NarratorCMH/cli_mmmchart",
+  "keywords": [
+    "terminal",
+    "chart",
+    "bar",
+    "console",
+    "graph"
+  ],
+  "dependencies": {
+    "chalk": "^5.4.1"
+  }
+}
