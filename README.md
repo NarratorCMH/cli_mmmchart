@@ -21,7 +21,7 @@
 npm install cli_mmmchart
 ```
 
-**IMPORTANT: **cli_mmmchart is ESM. Note that traditional Windows command lines, such as cmd.exe, have weak support for ANSI escape sequences, so displaying the cli_mmmchart on the default terminal in windows operating systems may not work particularly well
+IMPORTANT: cli_mmmchart is ESM. Note that traditional Windows command lines, such as cmd.exe, have weak support for ANSI escape sequences, so displaying the cli_mmmchart on the default terminal in windows operating systems may not work particularly well
 
 
 
@@ -80,9 +80,11 @@ drawPieChart(data)
 
 `drawPieChart(<data>, <maxLength>, <perLineNum>)`
 
-<data>: *Source drawing data*
-<maxLength>: *Maximum chart width (unit: characters, Select according to the width of your command line window), default is 90 characters wide*
-<perLineNum>: *The number of chart markers displayed per row, which defaults to 3*
+`<data>`: *Source drawing data*
+
+`<maxLength>`: *Maximum chart width (unit: characters, Select according to the width of your command line window), default is 90 characters wide*
+
+`<perLineNum>`: *The number of chart markers displayed per row, which defaults to 3*
 
 
 
@@ -119,11 +121,15 @@ drawBarChart(data, 60, "linear", false, 145);
 
 `drawBarChart(<data>, <maxLength>, <method>, <singularValueDeletion>, <upperLimit>)`
 
-<data>: *Source drawing data*
-<maxLength>: *Maximum chart width (unit: characters, Select according to the width of your command line window), default is 90 characters wide*
-<method>: *Non-linearization method, optional values are ["`Linear`", "`log`", "`sqrt`"], default is "`linear`"*. The purpose of setting this parameter is to make the chart display more balanced, which will not compress the proportion of other records displayed on the chart because one record value is too large. Setting nonlinearization can compress the values of all records in a range to show the difference between each record value evenly
-<singularValueDeletion>:*`true or false`, Whether to ignore singular values when drawing [to exclude the impact of excessively large or small data on the chart], default is `False`, Values flagged as exceptions by the algorithm will appear in blue*
-<upperLimit>: *Sets an upper limit for the y-values of the chart; entries exceeding this limit will be compressed to the limit value and additionally annotated, Records that exceed the upper limit will be shown in red*
+`<data>`: *Source drawing data*
+
+`<maxLength>`: *Maximum chart width (unit: characters, Select according to the width of your command line window), default is 90 characters wide*
+
+`<method>`: *Non-linearization method, optional values are ["`Linear`", "`log`", "`sqrt`"], default is "`linear`"*. The purpose of setting this parameter is to make the chart display more balanced, which will not compress the proportion of other records displayed on the chart because one record value is too large. Setting nonlinearization can compress the values of all records in a range to show the difference between each record value evenly
+
+`<singularValueDeletion>`:*`true or false`, Whether to ignore singular values when drawing [to exclude the impact of excessively large or small data on the chart], default is `False`, Values flagged as exceptions by the algorithm will appear in blue*
+
+`<upperLimit>`: *Sets an upper limit for the y-values of the chart; entries exceeding this limit will be compressed to the limit value and additionally annotated, Records that exceed the upper limit will be shown in red*
 
 
 
@@ -166,11 +172,15 @@ drawLineChart(data, 60, "sqrt", false, 160);
 
 `drawLineChart(<data>, <maxLength>, <method>, <singularValueDeletion>, <upperLimit>)`
 
-<data>: *Source drawing data*
-<maxLength>: *Maximum chart width (unit: characters, Select according to the width of your command line window), default is 90 characters wide*
-<method>: *Non-linearization method, optional values are ["`Linear`", "`log`", "`sqrt`"], default is "`linear`"*. The purpose of setting this parameter is to make the chart display more balanced, which will not compress the proportion of other records displayed on the chart because one record value is too large. Setting nonlinearization can compress the values of all records in a range to show the difference between each record value evenly
-<singularValueDeletion>:*`true or false`, Whether to ignore singular values when drawing [to exclude the impact of excessively large or small data on the chart], default is `False`, Values flagged as exceptions by the algorithm will appear in blue*
-<upperLimit>: *Sets an upper limit for the y-values of the chart; entries exceeding this limit will be compressed to the limit value and additionally annotated, Records that exceed the upper limit will be shown in red*
+`<data>`: *Source drawing data*
+
+`<maxLength>`: *Maximum chart width (unit: characters, Select according to the width of your command line window), default is 90 characters wide*
+
+`<method>`: *Non-linearization method, optional values are ["`Linear`", "`log`", "`sqrt`"], default is "`linear`"*. The purpose of setting this parameter is to make the chart display more balanced, which will not compress the proportion of other records displayed on the chart because one record value is too large. Setting nonlinearization can compress the values of all records in a range to show the difference between each record value evenly
+
+`<singularValueDeletion>`:*`true or false`, Whether to ignore singular values when drawing [to exclude the impact of excessively large or small data on the chart], default is `False`, Values flagged as exceptions by the algorithm will appear in blue*
+
+`<upperLimit>`: *Sets an upper limit for the y-values of the chart; entries exceeding this limit will be compressed to the limit value and additionally annotated, Records that exceed the upper limit will be shown in red*
 
 
 
