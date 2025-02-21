@@ -2,6 +2,7 @@
   "name": "cli_mmmchart",
   "version": "0.3.2",
   "type": "module",
+  "types": "./source/index.d.ts",
   "main": "./source/cli_mmmchart.js",
   "exports": "./source/cli_mmmchart.js",
   "scripts": {
